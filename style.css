@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+}
+/* ----- structure ------- */
+body {
+  background-color: beige;
+  margin: 0px 0px 0px 0px;
+}
+main {
+  margin: 0px 0px 0px 0px;
+}
+header {
+  background-color: brown;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-family: "Gochi Hand";
+  font-size: 52px;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li a {
+  font-family: Montserrat;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+header h2 {
+  background-color: rgb(175, 96, 72);
+}
+article {
+  padding: 45px 0 45px 0;
+  margin: 80px 105px 0 105px;
+}
+footer {
+  background-color: brown;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+.wrapper {
+  width: 100%;
+}
+/*-------LOGO----------*/
+
+/* ----- format text ------ */
+h1 {
+  color: rgb(254, 251, 241);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+h2 {
+  color: rgb(73, 63, 63);
+  font-family: monospace;
+}
+
+/* ----- format image ----- */
+img {
+  max-width: 100%;
+  height: auto;
+}
+.crop {
+  width: 400px; /* width of container */
+  height: 500px; /* height of container */
+  object-fit: cover;
+  object-position: 90px 10px 90px 90px; /* try 20px 10px */
+}
+/* ------ Layout -------- */
+.center {
+  text-align: center;
+}
+
+/* -------  Spacers ------- */
+.gap-sm {
+  height: 50px;
+  width: auto;
+}
+.gap-md {
+  height: 100px;
+  width: auto;
+}
+.gap-lg {
+  height: 200px;
+  width: auto;
+}
+
+.gap-footer {
+  height: 10px;
+  width: auto;
+}
+
+/* Groups & Items  (Mobile First) */
+.wrapper {
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+/*----Desktop---*/
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 100%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+  
+  header h1 {
+    font-size: 48px;
+    margin: 14px 0;
+    padding-top: 0;
+  }
+  
+  header nav {
+    margin-top: 8px;
+  }
+  
+  header nav ul li a:hover {
+    color: #bdbdbd;
+  }
+}
+
+/* ---Article Sections -----*/
+#home,
+#stuff {
+  margin-bottom: 120px;
+}
+article .wrapper h2 {
+  padding-left: 10px;
+}
+
+/*-----ABOUT____*/
+#about, #contact {
+  background-color: #8a6d3e;
+  padding: 20px 0 30px 0;
+  margin: 120px 0;
+}
+
+/* ---  Contact Form Design --- */
+
+form {
+  padding-right:6px;
+}
+
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+form label {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form textarea {
+  height: 160px;
+}
+/*---Section---*/
+section {
+  margin: 0 200px;
+}
